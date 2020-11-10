@@ -1,2 +1,2 @@
-# my_pinky_world
+# my_project
 Just a new Repository
