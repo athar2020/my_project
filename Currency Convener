@@ -1,0 +1,153 @@
+
+import java.util.*;
+import java.text.*;
+
+
+import java.text.DecimalFormat;
+
+public class Main
+{
+	public static void main(String[] args) {
+		double amount, code, dollar, rupee, yen, forint, pound, euro;
+    DecimalFormat f = new DecimalFormat("##,##");
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Which currency you want to convert?");
+    
+    System.out.println("1:Dollar /t2:Euro /t3:Forint /n4:Pound");
+    code=sc.nextInt();
+    
+    System.out.println("Hello, Welcome to my currency converter");
+    amount = sc.nextFloat();
+    
+    
+    if (code ==1){ 
+      
+      dollar = amount/74.34;
+      System.out.println("Your" + amount + "Rupee is:" + f.format(dollar) + "Dollar" );
+      
+      pound = amount/98.61;
+      System.out.println("Your" + amount + "Rupee is:" + f.format(pound) + "Pound");
+      
+      euro = amount/87.83;
+      System.out.println("Your" + amount + "Rupee is:" + f.format(euro) + "EURO");
+      
+      
+      yen = amount/ 0.71;
+      System.out.println("Your" + amount + "Rupee is:" + f.format(yen) + "Yen");
+      
+      
+      
+      forint = amount /0.25;
+      
+      System.out.println("Your" + amount + "Rupee is:" + f.format(forint) + "Forint");
+      
+    }
+    else if(code ==2){
+      //for dollar conversion
+      
+      rupee = amount *74.34;
+      System.out.println("Your" + amount + "Dollar is:" + f.format(rupee) + "Rupees");
+      
+      pound = amount *0.75;
+      System.out.println("Your" + amount + "Dollar is:" + f.format(pound) + "Pounds");
+      
+      euro = amount*0.85;
+      System.out.println("Your" + amount + "Dollar is:" + f.format(euro) + "EUROS");
+      
+      yen = amount*105.44;
+      System.out.println("Your" + amount + "Dollar is:" + f.format(yen) + "Yen");
+      
+      forint = amount*301.82;
+      System.out.println("Your" + amount + "Dollar is:" + f.format(forint) + "Forints");
+      
+      
+      
+    }
+    else if (code == 3){
+      
+      // for pound conversion
+      
+      rupee = amount *98.69;
+      System.out.println("Your" + amount + "Pound is:" + f.format(rupee) + "Rupees");
+      
+      dollar = amount *0.75;
+      System.out.println("Your" + amount + "Pound is:" + f.format(dollar) + "Dollars");
+      
+      euro = amount*1.13;
+      System.out.println("Your" + amount + "Pound is:" + f.format(euro) + "EUROS");
+      
+      yen = amount*139.85;
+      System.out.println("Your" + amount + "Pound is:" + f.format(yen) + "Yen");
+      
+      forint = amount*400.41;
+      System.out.println("Your" + amount + "Pound is:" + f.format(forint) + "Forints");
+      
+    }
+    else if (code == 3){
+      
+      // for Euro conversion
+      
+      rupee = amount *98.69;
+      System.out.println("Your" + amount + "Pound is:" + f.format(rupee) + "Rupees");
+      
+      dollar = amount *0.75;
+      System.out.println("Your" + amount + "Pound is:" + f.format(dollar) + "Dollars");
+      
+      euro = amount*1.13;
+      System.out.println("Your" + amount + "Pound is:" + f.format(euro) + "EUROS");
+      
+      yen = amount*139.85;
+      System.out.println("Your" + amount + "Pound is:" + f.format(yen) + "Yen");
+      
+      forint = amount*400.41;
+      System.out.println("Your" + amount + "Pound is:" + f.format(forint) + "Forints");
+    }
+      
+      else if (code == 4){
+      
+      // for Yen conversion
+      
+      rupee = amount *1.42;
+      System.out.println("Your" + amount + "YEN is:" + f.format(rupee) + "Rupees");
+      
+      dollar = amount *105.50;
+      System.out.println("Your" + amount + "YEN is:" + f.format(dollar) + "Dollars");
+      
+      euro = amount*124.11;
+      System.out.println("Your" + amount + "YEN is:" + f.format(euro) + "EUROS");
+      
+      pound = amount*139.59;
+      System.out.println("Your" + amount + "YEN is:" + f.format(pound) + "Pounds");
+      
+      forint = amount*0.35;
+      System.out.println("Your" + amount + "YEN is:" + f.format(forint) + "Forints");
+      }
+      
+        else if (code == 4){
+      
+      // for Forint conversion
+      
+      yen = amount*2.87;
+      System.out.println("Your" + amount + "Forint is:" + f.format(yen) + "Rupees");
+      
+      dollar = amount *302.29;
+      System.out.println("Your" + amount + "YEN is:" + f.format(dollar) + "Dollars");
+      
+      euro = amount*355.80;
+      System.out.println("Your" + amount + "YEN is:" + f.format(euro) + "EUROS");
+      
+      pound = amount*399.81;
+      System.out.println("Your" + amount + "YEN is:" + f.format(pound) + "Pounds");
+      
+      rupee = amount*4.06;
+      System.out.println("Your" + amount + "YEN is:" + f.format(rupee) + "Forints");
+        }
+    else{
+      System.out.println("Invalid amount");
+    }
+      
+    
+	}
+}
+
