@@ -1,0 +1,30 @@
+class mycake{
+  
+  String recipe;
+  String ingridients;
+  
+  public mycake( String recipe,String ingridients){
+  
+    this.recipe=recipe;
+    this.ingridients=ingridients;
+    
+  }
+  
+  public String toString(){
+    StringBuilder sb = new StringBuilder();
+    sb.append(recipe).append(" ").append(ingridients);
+     return sb.toString();
+  }
+ 
+  
+}
+class mypractice {
+  public static void main(String[] args) {
+    
+    mycake cake = new mycake("Wisk egg, add sugar, add milk" , "Egg, milk, sugar" );
+    
+     System.out.println(cake);
+   
+    
+  }
+}
