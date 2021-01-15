@@ -1,0 +1,24 @@
+class cake{
+  String ingredients;
+  int amount;
+  public void setIngredients(String ingredients){
+    this.ingredients = ingredients;
+  }
+  public void setAmount(int amount){
+    this.amount=amount;
+  }
+  public String getIngredients(){
+    return ingredients;
+  }
+  public int getAmount(){
+    return amount;
+  } }
+public class Sng {
+  public static void main(String[] args) {
+    cake cake1 = new cake();
+    cake1.setIngredients("Sugar,Egg,Vanilla,Milk");
+    cake1.setAmount(3);
+    System.out.println(cake1.getIngredients());
+    System.out.println(cake1.getAmount());
+    
+  }}
